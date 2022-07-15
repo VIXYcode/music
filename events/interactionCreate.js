@@ -6,7 +6,7 @@ var ee = require("../settings/embed.json");
 client.on('interactionCreate', async interaction => {
     // Slash Command Handling
     if (interaction.isCommand()) {
-        await interaction.deferReply({ ephemeral: true }).catch(() => { });
+        await interaction.deferReply({ ephemeral: false }).catch(() => { });
 
         const cmd = client.Commands.get(interaction.commandName);
         if (!cmd)

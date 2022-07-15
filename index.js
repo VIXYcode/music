@@ -28,7 +28,7 @@ client.categories = fs.readdirSync("./Commands/");
 
 // Initializing the project
 //Loading files, with the client variable like Command Handler, Event Handler, ...
-["event_handler", "slash_handler"].forEach((handler) => {
+["event_handler", "slash_handler","Music_Handler"].forEach((handler) => {
     require(`./handlers/${handler}`)(client)
 });
 
@@ -46,8 +46,4 @@ process.on("uncaughtException", (err, origin) => {
 process.on('uncaughtExceptionMonitor', (err, origin) => {
     console.log(' [Error_Handling] :: Uncaught Exception/Catch (MONITOR)');
     console.log(err, origin);
-});
-process.on('multipleResolves', (type, promise, reason) => {
-    console.log(' [Error_Handling] :: Multiple Resolves');
-    console.log(type, promise, reason);
 });

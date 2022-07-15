@@ -1,5 +1,5 @@
 <h1 align="center">
-Best Class Based Discord.js Handler </h1><br/>
+Best Discord Music Bot Coded Using Distube </h1><br/>
 
 ## **Installation | How to use the Bot**
 
